@@ -33,8 +33,6 @@
 		B013633D16F04D2200531638 /* IOJones-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IOJones-Prefix.pch"; sourceTree = "<group>"; };
 		B013634116F04D2200531638 /* Document.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
 		B013634216F04D2200531638 /* Document.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
-		B013634516F04D2200531638 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Document.xib; sourceTree = "<group>"; };
-		B013634816F04D2200531638 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		B013634F16F04DEC00531638 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B013635016F04DEC00531638 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B013635216F04E2600531638 /* IOReg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOReg.h; sourceTree = "<group>"; };
@@ -44,6 +42,8 @@
 		B08D5A1F170001AD00CD840F /* Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base.m; sourceTree = "<group>"; };
 		B08D5A21170026BF00CD840F /* IOKitLibPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOKitLibPrivate.h; sourceTree = "<group>"; };
 		B08D5A221700353B00CD840F /* hat.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = hat.icns; sourceTree = SOURCE_ROOT; };
+		B09A522722A0BDDF003BD6DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Document.xib; sourceTree = "<group>"; };
+		B09A522822A0BDDF003BD6DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		B0D44A5C16FD19CD0026D251 /* ioreg.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ioreg.icns; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -161,10 +161,11 @@
 			};
 			buildConfigurationList = B013632716F04D2200531638 /* Build configuration list for PBXProject "IOJones" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = B013632316F04D2200531638;
 			productRefGroup = B013632D16F04D2200531638 /* Products */;
@@ -228,7 +229,7 @@
 		B013634416F04D2200531638 /* Document.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B013634516F04D2200531638 /* en */,
+				B09A522722A0BDDF003BD6DA /* Base */,
 			);
 			name = Document.xib;
 			sourceTree = "<group>";
@@ -236,7 +237,7 @@
 		B013634716F04D2200531638 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B013634816F04D2200531638 /* en */,
+				B09A522822A0BDDF003BD6DA /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
