@@ -462,7 +462,7 @@ static NSUInteger boolType, dictType, arrType, dataType, strType, numType, dateT
         return _children.count?[NSDictionary dictionaryWithObjects:[_children valueForKey:@"dictionaryRepresentation"] forKeys:[_children valueForKey:@"key"]]:@{};
     else if (_type == arrType)
         return _children.count?[_children valueForKey:@"dictionaryRepresentation"]:@[];
-    return _value;
+    return [_value isKindOfClass:NSSet.class] ? [_value allObjects] : _value;
 }
 -(NSString *)description {
     if (_type == boolType) return [_value boolValue]?@"True":@"False";
