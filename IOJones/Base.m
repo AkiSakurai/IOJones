@@ -52,7 +52,7 @@
 }
 -(NSString *)groupedDescription:(NSUInteger)group{
     NSUInteger i = 0, j = self.length, k = j*(group+1)+1+!j;
-    char description[k];
+    char description[k+1];
     description[0] = '<';
     while (i < j) {
         sprintf(description+(i*(group+1))+1, "%02x ", ((UInt8 *)self.bytes)[i]);
